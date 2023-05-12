@@ -10,13 +10,12 @@ const commentFormHandler = async function (event) {
 			method: 'POST',
 			body: JSON.stringify({
 				blog_id,
-				comment_description
+				comment_description,
 			}),
 			headers: {
 				'Content-Type': 'application/json'
 			}
 		});
-		console.log("post for comments compleat")
 		document.location.reload();
 	}
 };

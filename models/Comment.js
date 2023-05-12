@@ -9,7 +9,7 @@ Comment.init({
         primaryKey: true,
         autIncrement: true,
     },
-    comment_dexcription: {
+    comment_description: {
         type: DataTypes.STRING,
     },
     date_created: {
@@ -25,7 +25,7 @@ Comment.init({
         },
     },
     user_id: {
-        type: DatatTypes.INTERGER,
+        type: DataTypes.INTEGER,
         references: {
             model: "user",
             key: "id",
